@@ -26,6 +26,7 @@
         function HelloReact(props) {
             console.log(props);
 
+            //JSX는 parent가 하나여야함
             return (
                 <div>
                     <h1>hello {props.name}</h1>
@@ -34,9 +35,11 @@
             )
         }
 
+        // {} 중괄호는 javscript 선언
         const app = (
             <div>
-                <HelloReact name='호준' />
+                <HelloReact name='hsj' />
+                <p>{10+10}</p>
                 <p>{HelloButton()}</p>
                 <HelloButton />
                 <HelloButton />
